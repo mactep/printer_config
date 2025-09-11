@@ -1,0 +1,14 @@
+[Unit]
+Description=Moonraker Ready Git Sync Listener
+After=moonraker.service
+Requires=moonraker.service
+
+[Service]
+User=orangepi
+WorkingDirectory=/home/orangepi
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/bin/python3 /home/orangepi/printer_data/config/backup_script/moonraker_sock.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

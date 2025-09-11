@@ -10,3 +10,7 @@
 - Install
   [Klack-Probe-Macros](https://github.com/Harrypulvirenti/Klack-Probe-Macros)
 - Install [z_calibration](https://github.com/protoloft/klipper_z_calibration)
+
+## Hardware
+
+- The probe and the extruder fan uses some of the pins that the screen used
